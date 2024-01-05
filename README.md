@@ -3,7 +3,7 @@ Demo of an unusual behavior in the TypeScript compiler.
 `large.ts` is supposed to not be checked due to `// @ts-nocheck`.
 It doesn't get checked during an initial compile.
 However, if some file it imports changes, and a subsequent incremental compile
-is performed, the compiler performs type checking on the file. I don't think
+is performed, the compiler spends CPU time type checking on the file. I don't think
 diagnostics are reported from the checking, however the compiler is simply
 performing extra work that seems unnecessary.
 
