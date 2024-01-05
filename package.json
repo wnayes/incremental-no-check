@@ -1,0 +1,13 @@
+{
+  "name": "incremental-no-check",
+  "version": "1.0.0",
+  "description": "Demo of incremental behavior with ts-nocheck",
+  "scripts": {
+    "build": "tsc -p tsconfig.json --generateTrace ./traces"
+  },
+  "author": "Will Nayes",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.3.3"
+  }
+}
